@@ -56,7 +56,7 @@ class SparseMatrix:
         return result
 
     def __sub__(self, other):
-        """This function will performa a matrix subtraction."""
+        """This function will perform a matrix subtraction."""
         if self.rows != other.rows or self.cols != other.cols:
             raise ValueError("Error: Matrices must have the same dimensions for subtraction.")
 
