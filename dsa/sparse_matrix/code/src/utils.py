@@ -1,7 +1,7 @@
 import os
 
 def validate_input_file(file_path):
-    """Ensures the file exists and follows the correct sparse matrix format."""
+    """This function is going to ensure that the file exists and follows the correct sparse matrix format."""
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Error: File '{file_path}' not found.")
 
@@ -12,5 +12,5 @@ def validate_input_file(file_path):
         raise ValueError("Error: Input file format is incorrect.")
 
 def save_matrix_to_file(matrix, file_path):
-    """Saves a SparseMatrix object to a file."""
+    """This function will save a SparseMatrix object to a file."""
     matrix.save_to_file(file_path)

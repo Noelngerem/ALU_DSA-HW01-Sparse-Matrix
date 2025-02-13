@@ -1,6 +1,6 @@
 class SparseMatrix:
     def __init__(self, file_path=None, rows=None, cols=None):
-        """Initialize sparse matrix from a file or create an empty one."""
+        """This function will initialize sparse matrix from a file or create an empty one."""
         self.data = {}
         if file_path:
             self.load_from_file(file_path)
@@ -9,7 +9,7 @@ class SparseMatrix:
             self.cols = cols
 
     def load_from_file(self, file_path):
-        """Loads a sparse matrix from a file while handling errors."""
+        """This function is going to load sparse matrix from a file while handling errors."""
         try:
             with open(file_path, 'r') as file:
                 lines = file.readlines()
@@ -32,18 +32,18 @@ class SparseMatrix:
             raise ValueError(f"Error: Input file '{file_path}' has the wrong format.")
 
     def getElement(self, row, col):
-        """Returns the value at (row, col), defaulting to 0."""
+        """In this line, the code will return the value at (row, col), defaulting to 0."""
         return self.data.get((row, col), 0)
 
     def setElement(self, row, col, value):
-        """Sets the value at (row, col), storing only if non-zero."""
+        """This will set the value at (row, col), storing only if non-zero."""
         if value != 0:
             self.data[(row, col)] = value
         elif (row, col) in self.data:
             del self.data[(row, col)]
 
     def __add__(self, other):
-        """Performs matrix addition."""
+        """ This function will perform a matrix addition."""
         if self.rows != other.rows or self.cols != other.cols:
             raise ValueError("Error: Matrices must have the same dimensions for addition.")
 
@@ -56,7 +56,7 @@ class SparseMatrix:
         return result
 
     def __sub__(self, other):
-        """Performs matrix subtraction."""
+        """This function will performa a matrix subtraction."""
         if self.rows != other.rows or self.cols != other.cols:
             raise ValueError("Error: Matrices must have the same dimensions for subtraction.")
 
@@ -69,7 +69,7 @@ class SparseMatrix:
         return result
 
     def __mul__(self, other):
-        """Performs matrix multiplication."""
+        """This function is going to perform a matrix multiplication."""
         if self.cols != other.rows:
             raise ValueError("Error: Cannot multiply matrices. Dimensions do not match.")
 
@@ -84,7 +84,7 @@ class SparseMatrix:
         return result
 
     def save_to_file(self, file_path):
-        """Saves the sparse matrix to a file."""
+        """This function will save the sparse matrix to a file."""
         with open(file_path, 'w') as file:
             file.write(f"rows={self.rows}\n")
             file.write(f"cols={self.cols}\n")
