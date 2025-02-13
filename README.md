@@ -6,7 +6,7 @@ This project implements a **Sparse Matrix** data structure and supports **additi
 
 ### Clone the Repository
 
-git clone <your-repository-url>
+git {clone your repository url}
 
 ### Example Sparse Matrix Input File
 
