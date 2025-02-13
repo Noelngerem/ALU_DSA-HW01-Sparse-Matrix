@@ -12,10 +12,15 @@ git clone {your repository url}
 
 Your input files should be formatted as follows:
 rows=3
+
 cols=3
+
 (0, 1, 5)
+
 (1, 2, -3)
+
 (2, 0, 7)
+
 
 
 ### Run the Program
