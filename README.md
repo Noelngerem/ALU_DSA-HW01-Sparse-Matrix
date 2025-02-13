@@ -11,6 +11,7 @@ git clone {your repository url}
 ### Example Sparse Matrix Input File
 
 Your input files should be formatted as follows:
+
 rows=3
 
 cols=3
