@@ -22,10 +22,10 @@ This project implements a **Sparse Matrix** data structure and supports **additi
 ### Clone the Repository
 
 git clone <your-repository-url>
-cd dsa-sparse-matrix/dsa/sparse_matrix/
 
-### Add Input Files
+### Example Sparse Matrix Input File
 
+Your input files should be formatted as follows:
 rows=3
 cols=3
 (0, 1, 5)
