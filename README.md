@@ -2,21 +2,6 @@
 
 This project implements a **Sparse Matrix** data structure and supports **addition, subtraction, and multiplication** of sparse matrices. The implementation follows efficient memory usage by storing only non-zero elements.
 
-## Folder Structure
-
-│── /dsa/
-│   ├── /sparse_matrix/
-│   │   ├── /code/
-│   │   │   ├── /src/
-│   │   │   │   ├── sparse_matrix.py  # sparse_matrix.py implements the SparseMatrix class
-│   │   │   │   ├── utils.py          # utils.py includes a helper functions for file validation and saving
-│   │   │   │   ├── main.py           # the main.py will run the user interaction
-│   │   │
-│   │   ├── /sample_inputs/
-│   │   │   ├── matrixfile1.txt  # Example input file 1
-│   │   │   ├── matrixfile2.txt  # Example input file 2
-│   │   │
-
 ## How to Run the Program
 
 ### Clone the Repository
